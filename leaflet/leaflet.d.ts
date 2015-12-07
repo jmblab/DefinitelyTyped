@@ -2696,6 +2696,12 @@ declare namespace L.Map {
          * Default value: true.
          */
         bounceAtZoomLimits?: boolean;
+		
+		/**
+          * Iterates over the layers of the map, optionally specifying context 
+		  * of the iterator function.
+          */
+        eachLayer(fn: (layer: T) => void, context?: any): LayerGroup<T>;
     }
 
     export interface ZoomOptions {

@@ -424,3 +424,6 @@ var zoomCtrl = L.control.zoom({
     zoomInText: '+',
     zoomOutText: '-'
 });
+
+map.addLayer(layer);
+map.eachLayer(l => {});
